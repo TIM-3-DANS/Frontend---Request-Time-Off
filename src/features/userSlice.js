@@ -5,7 +5,7 @@ const userSlice = createSlice({
     name : "user",
     initialState:{
         name : "Halo, John Doe ",
-        email : "fadlifirdass@gmail.com"
+        email : "Employee"
     },
     reducers:{
         update: (state, action)=>{

@@ -23,7 +23,7 @@ const Dashboard = () => {
     <div class="container">
     <Navbar/>
     <div className="box mt-5">
-        <h4 className="title is-4">{name}</h4>
+        <h4 className="title is-4">{name} | {email}</h4>
     </div>
     </div>
   )

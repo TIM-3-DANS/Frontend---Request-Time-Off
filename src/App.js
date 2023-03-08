@@ -6,6 +6,7 @@ import TimeOffForm from "./components/form/timeOff/TimeOffForm";
 import HrMenu from "./components/dashboard/HrMenu";
 import AdminMenu from "./components/dashboard/AdminMenu";
 import { useState } from "react";
+import AddUser from "./components/dashboard/AddUser";
 
 
 
@@ -16,13 +17,14 @@ const USER_TYPES = {
   ADMIN_USER : "Admin User"
 }
 
-const CURRENT_USER_TYPE = USER_TYPES.ADMIN_USER;
+const CURRENT_USER_TYPE = USER_TYPES.EMPLOYE_USER;
 
 function App() {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<Login/>}/> 
+      <Route path="/" element={<Login/>}/>
+      <Route path="/adduser" element={<AddUser/>}/>  
       <Route path="/navbar" element={<Navbar/>}/>
       <Route path="/dashboard" element={
       <EmployeElement>   
