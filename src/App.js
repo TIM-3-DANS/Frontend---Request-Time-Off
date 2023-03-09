@@ -17,7 +17,7 @@ const USER_TYPES = {
   ADMIN_USER : "Admin User"
 }
 
-const CURRENT_USER_TYPE = USER_TYPES.EMPLOYE_USER;
+const CURRENT_USER_TYPE = USER_TYPES.ADMIN_USER;
 
 function App() {
   return (
